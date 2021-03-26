@@ -1,0 +1,22 @@
+<div>
+    <h2>Log In Page</h2><br/>
+    <form #userRef="ngForm" (ngSubmit)="checkUser(userRef.value)" >
+  <label >UserName: </label>
+  <input type="text" name="user" ngModel><br/>
+
+  <label>Password: </label>
+  <input type="Password" name="pass" ngModel ><br/><br/>
+
+  <input type="submit" value="Login" (click)= "homePage()" class="btn btn-success" />
+ 
+    
+
+ <!---- <a routerlink="regestration" class="button" class="btn btn-info">Sign Up</a>-->
+ 
+ <input type="button" value="Sign Up"  (click)="Page()" class="btn btn-info"/>
+</form>
+{{msg}}
+
+</div>
+
+
