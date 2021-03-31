@@ -1,0 +1,58 @@
+<div>
+    <h1>Task Traker</h1>
+    <hr/>
+    <br/>
+    <form #empRef="ngForm" (ngSubmit)= "StoreUser(empRef.value)">
+      <mat-form-field>
+        <mat-label> Id</mat-label>
+        <input id="id" matInput type="text" name="id" ngModel/><br/>
+      </mat-form-field><br/>
+
+
+      <mat-form-field>
+        <mat-label> Name</mat-label>
+        <input id="name" matInput type="text" name="name" ngModel/>
+      </mat-form-field><br/>
+
+      <mat-form-field>
+        <mat-label> Task</mat-label>
+        <input id="task" matInput type="text" name="task" ngModel/>
+      </mat-form-field><br/>
+
+      <mat-form-field>
+        <mat-label> Dead Line</mat-label>
+        <input  id="date" matInput type="date" name="Dead Line" ngModel/>
+      </mat-form-field><br/>
+
+      <button mat-stroked-button color="primary" type="submit">Save</button>
+      <button mat-stroked-button color="primary" type="reset">Reset</button>
+     
+
+      
+</form><br/>
+</div>
+<Style>
+table,th,td    {
+  border: 1px solid black;
+border-collapse: collapse;
+padding: 15px;
+border-spacing: 5px
+}
+</style>    
+<table id="display" >
+    <tr>
+       <th>Emp Id</th>
+        <th>Name</th>
+        <th>Task</th>
+        <th>Dead Line</th>
+    </tr>
+   
+    <tr>
+      <td>55555</td>
+      <td>Karam Alsham</td>
+      <td>get born</td>
+      <td>2017-11-25</td>
+  </tr>
+  </table>
+  
+  
